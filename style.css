@@ -1,0 +1,299 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Loader styles */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Background color of the loader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Apply animation */
+}
+
+/* Main content */
+.content {
+  display: none; /* Hide the content by default */
+}
+
+/* Animation for loader */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+    /* Custom CSS for styling */
+    .left-content {
+        padding: 50px;
+        margin-top: 100px;
+      }
+      .right-content img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .one {
+        text-align: center;
+      }
+      
+      .rgb-text {
+        font-size: 2rem;
+        background: linear-gradient(90deg , yellow, blue, magenta, red);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: color-change 5s linear infinite;
+      }
+      
+      @keyframes color-change {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+      }
+
+        /* Custom CSS for styling aboutme */
+          .karthi{
+                   font-size:4rem;
+              }
+      .kick{
+        color: #2c3e50;
+        font-weight: 500;
+      }
+
+        .home-section{
+          background-color: #f1c40f;
+        }
+    .about-me-section {
+        padding: 50px 0;
+        background-color: #ecf0f1;
+      }
+      .about-me-content h2 {
+        text-align: center;
+      }
+      .about-me-content h2 {
+        margin-bottom: 30px;
+      }
+      .about-me-content p {
+        margin-bottom: 20px;
+      }
+
+        /* Custom CSS for styling */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .two {
+          display: flex;
+          justify-content: space-around;
+          margin: 50px auto;
+        }
+        
+        .star {
+          color: gold;
+          margin-right: 5px;
+        }
+        
+        .left-box, .right-box {
+          width: 45%;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        
+        .left-box h2, .right-box h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+        
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        li {
+          margin-bottom: 10px;
+        }
+        
+        @media screen and (max-width: 475px) {
+          .two {
+            display: flex;
+            flex-direction: column;
+          }
+        
+          .left-box {
+            order: 1; /* Set the order to 1, which moves the left box to the top */
+            margin-bottom: 20px; /* Add some margin at the bottom */
+            width: auto;
+          }
+        
+          .right-box {
+            order: 2; /* Set the order to 2, which moves the right box to the bottom */
+            width: auto;  
+          }
+          }
+        
+
+
+
+      /* Custom CSS for styling */
+      .skills-section {
+        padding: 50px 0;
+      }
+      .x-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+    
+    @keyframes borderAnimation {
+      0% {
+        border-color: rgb(255, 0, 0); /* Start color */
+      }
+      50% {
+        border-color: rgb(0, 255, 0); /* Middle color */
+      }
+      100% {
+        border-color: rgb(0, 0, 255); /* End color */
+      }
+    }
+
+      .skill-box {
+        border: 2px solid transparent; /* Start with a transparent border */
+        animation: borderAnimation 2s infinite alternate; /* Apply the animation */  
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        flex: 1;
+        max-width: 300px;
+        color: white;
+      }
+      .skill-box h3 {
+        margin-bottom: 10px;
+      }
+      .skill-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .skill-list li {
+        margin-bottom: 5px;
+      }
+
+         /* Custom CSS for styling */
+    .projects-section {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+      }
+      .project {
+        margin-bottom: 30px;
+      }
+      .project h3 {
+        margin-bottom: 10px;
+      }
+      .project p {
+        margin-bottom: 5px;
+      }
+
+      /* from page */
+      .form-section {
+        padding: 50px 0;
+      }
+      /* socia media */
+      .social-media {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .social-media a {
+        color: #343a40;
+        margin: 0 10px;
+      }
+      .social-media a:hover {
+        color: #007bff;
+      }
+
+      /* footer */
+         /* Custom CSS for styling */
+    .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 20px 0;
+      }
+      .footer p {
+        margin-bottom: 0;
+      }
+      
+      /* whts */
+      .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #ffffff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        text-decoration: none;
+      }
+      .whatsapp-icon:hover {
+        background-color: #128c7e;
+      }
+
+      /* addtion infromation */
+        /* Custom CSS for styling */
+    .additional-info-section {
+        padding: 50px 0;
+      }
+      .pros-cons {
+        margin-bottom: 30px;
+      }
+      .pros-cons h3 {
+        margin-bottom: 10px;
+      }
+
+
+
+      /* from css */
+      .form-section {
+        padding: 50px 0;
+      }
+      .center-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        padding: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+      }
+
+
+      /* form */
+      

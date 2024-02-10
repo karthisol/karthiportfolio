@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- link with style sheet -->
+<link rel="stylesheet" href="/style.css">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>portfolio website</title>
+</head>
+<body>
+ 
+  <!-- loading -->
+  <div class="loader-wrapper" id="loader-wrapper">
+    <div class="loader"></div>
+</div>
+
+
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold"  href="#">
+        <div class="container one">
+          <h1 class="rgb-text">KARTHI PORTFOLIO</h1>
+        </div></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5 fw-bold">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<a href="https://wa.me/919361191640" class="whatsapp-icon" target="_blank"><i class="bi bi-whatsapp"></i></a>
+
+
+<!-- home page section -->
+<section class="home-section">
+    
+<div class="container">
+    <div class="row">
+      <!-- Left Side - Detailed Content -->
+      <div class="col-md-6 text-white">
+        <div class="left-content">
+          <h2 class=" karthi">I am Karthi, a Solidity developer.</h2>
+          <p class="kick"> Eager to kickstart my career in blockchain
+            technology as a Solidity developer, I am committed to leveraging my front-end
+            development experience and dedication to continuous learning to contribute effectively to
+            blockchain projects.</p>
+          <a href="https://wa.me/919361191640 " class="btn btn-primary">contact me</a>
+        </div>
+      </div>
+      <!-- Right Side - Developer Image -->
+      <div class="col-md-6">
+        <div class="right-content">
+          <img src="/imges/karthi-dsc1.png" alt="Developer Image">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- aboutme section -->
+<section>
+    <div class="container two ">
+        <div class="left-box">
+          <h2 class="text-center">About Karthi</h2>
+          <ul>
+            <li><span class="star">★</span> Dedicated Solidity developer</li>
+            <li><span class="star">★</span> Bachelor's degree in Chemistry from Bharathidasan University</li>
+            <li><span class="star">★</span> Passionate about technology and blockchain</li>
+            <li><span class="star">★</span> Proficient in HTML, CSS, Bootstrap, and JavaScript</li>
+            <li><span class="star">★</span> Hands-on experience in Solidity and blockchain development</li>
+          </ul>
+        </div>
+        <div class="right-box">
+          <h2 class="text-center">Expertise</h2>
+          <ul>
+            <li><span class="star">★</span> Web development</li>
+            <li><span class="star">★</span> Solidity and smart contracts</li>
+            <li><span class="star">★</span> Decentralized applications</li>
+            <li><span class="star">★</span> Ethereum network</li>
+            <li><span class="star">★</span> Blockchain concepts</li>
+          </ul>
+        </div>
+      </div>
+</section>      
+
+<!-- skill section -->
+<section style="background-color:#535c68; ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="skills-section">
+            <div class="x-section">
+              <div class="skill-box">
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Solidity</li>
+                </ul>
+              </div>
+              <div class="skill-box">
+                <h3>Front-End Development</h3>
+                <ul class="skill-list">
+                  <li>Bootstrap</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+            </div>
+            <div class="x-section">
+              <div class="skill-box">
+                <h3>Version Control</h3>
+                <ul class="skill-list">
+                  <li>Git</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+              <div class="skill-box">
+                <h3>Tools & Technologies</h3>
+                <ul class="skill-list">
+                  <li>Visual Studio Code</li>
+                  <li>RemixIDE</li>
+                  <li>Web3.js</li>
+                  <li>MetaMask</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- project page -->
+<!-- <section>
+    
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="projects-section">
+          <h2 class="text-center">Projects</h2>
+          <div id="projectContainer">
+            Decentralized Voting DApp
+
+Developed a decentralized voting application using Solidity smart contracts and Ethereum blockchain.
+Implemented user authentication, ballot creation, and voting functionalities.
+Utilized Web3.js for interaction with Ethereum smart contracts and MetaMask integration.
+Portfolio Website
+
+Designed and developed a personal portfolio website showcasing projects and skills.
+Utilized HTML, CSS, and JavaScript to create a responsive and visually appealing interface.
+Integrated animations and interactive elements to enhance user engagement.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section> -->
+
+<!-- addtion infromation -->
+<section style="background-color:#95afc0">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center mt-2 fw-bold">Additional Information</h2>
+        <div class="col-md-6">
+          <div class="additional-info-section">
+          
+            
+            <div class="pros-cons">
+              <h3 class="fw-bolder">Pros:</h3>
+              <ul class="text-white">
+                <li>Motivated individual with intermediate-level English communication skills, eager to transition into a career in web development and Solidity development.</li>
+                <li>Leveraging strong front-end development skills and a passion for learning new technologies to contribute effectively to innovative projects.</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="additional-info-section">
+            <h3 class="fw-bold">Cons:</h3>
+            <ul class="text-white ">
+              <li>Actively improving English communication skills on a daily basis to enhance professional interactions.</li>
+              <li>Strong problem-solving abilities and a proactive approach to learning new technologies.</li>
+              <li>Passionate about blockchain technology and eager to pursue further education and training in Solidity development.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!--  from sectiom -->
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="form-section">
+              <h2 class="text-center mb-4">Contact Form</h2>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="gmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="gmail" name="gmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <!-- <button id="submitButton" type="button">Submit</button> -->
+
+                <button type="submit" onclick="sendwhatsapp()" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- SOCIA MEDIA -->
+<section class="social-media">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Follow Us</h3>
+          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- footer section -->
+<section>
+ 
+<footer class="footer">
+  <div class="container text-center">
+    <p>&copy; 2024 Your Website portfolio. All rights reserved.</p>
+    <p>Designed with <i class="bi bi-heart-fill text-danger"></i> Karthi G</p>
+  </div>
+</footer>
+</section>
+<!-- Bootstrap JS (optional) - for dropdowns, toggles, etc. -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
