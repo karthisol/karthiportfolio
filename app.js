@@ -77,13 +77,13 @@
 //   console.log(`Server is listening at http://localhost:${port}`);
 // });
 // JavaScript for form validation and WhatsApp message
-document.addEventListener("DOMContentLoaded", function() {
-  // Hide the loader and display the content after 5 seconds
-  setTimeout(function() {
-      document.getElementById("loader-wrapper").style.display = "none";
-      document.getElementById("content").style.display = "block";
-  }, 5000); // Adjust the time (in milliseconds) as needed
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Hide the loader and display the content after 5 seconds
+//   setTimeout(function() {
+//       document.getElementById("loader-wrapper").style.display = "none";
+//       document.getElementById("content").style.display = "block";
+//   }, 5000); // Adjust the time (in milliseconds) as needed
+// });
 
 
 
