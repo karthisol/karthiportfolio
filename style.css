@@ -2,6 +2,9 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 
+   html {
+    scroll-behavior: smooth;
+  }
   /* Loader styles */
 .loader-wrapper {
   position: fixed;
@@ -93,6 +96,21 @@ body {
         margin-bottom: 20px;
       }
 
+      /* Mobile responsive styles */
+@media (max-width: 376px) {
+  .rgb-text {
+
+    font-size: 1.5rem;
+  
+}
+}
+@media (max-width: 321px) {
+  .rgb-text {
+
+    font-size: 1rem;
+  
+}
+}
         /* Custom CSS for styling */
         body {
           font-family: Arial, sans-serif;

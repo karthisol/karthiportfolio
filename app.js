@@ -23,90 +23,78 @@
 //     });
 //   });
 
-//   from section code
-// JavaScript for form validation
-// document.addEventListener("DOMContentLoaded", function() {
-//     const form = document.getElementById("contactForm");
-//     form.addEventListener("submit", function(event) {
-//       event.preventDefault(); // Prevent form submission
-//       // Validate form fields
-//       const name = document.getElementById("name").value;
-//       const gmail = document.getElementById("gmail").value;
-//       const message = document.getElementById("message").value;
-//       if (!name || !gmail || !message) {
-//         alert("Please fill in all fields.");
-//         return;
-//       }
-//       // Submit the form if all fields are filled
-//       alert("Form submitted successfully!");
-//       form.reset(); // Reset form fields after submission
-//     });
-//   });
-
-// //   whatsapp
-// const express = require('express');
-// const bodyParser = require('body-parser');
-// const { Client } = require('whatsapp-web.js'); // Assuming you're using whatsapp-web.js library
-
-// const app = express();
-// const port = 3000;
-
-// // Initialize WhatsApp client
-// const client = new Client();
-
-// // Handle form submission
-// app.post('/submit-form', (req, res) => {
-//   const { name, gmail, message } = req.body;
-
-//   // Send message to WhatsApp
-//   client.sendMessage('+919361191640', `New message from ${name} (${gmail}): ${message}`)
-//     .then(() => {
-//       res.status(200).send('Message sent successfully!');
-//     })
-//     .catch((error) => {
-//       console.error('Error sending message:', error);
-//       res.status(500).send('Error sending message.');
-//     });
-// });
-
-// // Middleware for parsing form data
-// app.use(bodyParser.urlencoded({ extended: true }));
-
-// // Start server
-// app.listen(port, () => {
-//   console.log(`Server is listening at http://localhost:${port}`);
-// });
-// JavaScript for form validation and WhatsApp message
-// document.addEventListener("DOMContentLoaded", function() {
-//   // Hide the loader and display the content after 5 seconds
-//   setTimeout(function() {
-//       document.getElementById("loader-wrapper").style.display = "none";
-//       document.getElementById("content").style.display = "block";
-//   }, 5000); // Adjust the time (in milliseconds) as needed
-// });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to validate input fields
+  function validateInputs() {
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("gmail").value.trim();
+    var message = document.getElementById("message").value.trim();
+    var isValid = true;
 
+    // Validate Name
+    if (name === "") {
+      document.getElementById("name").classList.add("is-invalid");
+      isValid = false;
+    } else {
+      document.getElementById("name").classList.remove("is-invalid");
+    }
 
+    // Validate Email
+    if (email === "") {
+      document.getElementById("gmail").classList.add("is-invalid");
+      isValid = false;
+    } else {
+      document.getElementById("gmail").classList.remove("is-invalid");
+    }
 
+    // Validate Message
+    if (message === "") {
+      document.getElementById("message").classList.add("is-invalid");
+      isValid = false;
+    } else {
+      document.getElementById("message").classList.remove("is-invalid");
+    }
 
-function sendwhatsapp(){
-    var phonenumber = "+919361191640";
-
-    var name = document.querySelector("#name").value;
-    var email = document.querySelector("#email").value;
-    // var country = document.querySelector("#country").value;
-    var message = document.querySelector("#message").value;
-
-    var url = "https://wa.me/" + phonenumber + "?text="
-    +"*Name :* "+name+"%0a"
-    +"*Email :* "+email+"%0a"
-    // +"*Country:* "+country+"%0a"
-    +"*Message :* "+message
-    +"%0a%0a"
-    +"This is an example of send HTML form data to WhatsApp";
-
-    window.open(url, '_blank').focus();
+    return isValid;
   }
-  
+
+  // Function to send WhatsApp message
+  function sendwhatsapp() {
+    if (validateInputs()) {
+      var phonenumber = "+919361191640";
+      var name = document.getElementById("name").value.trim();
+      var email = document.getElementById("gmail").value.trim();
+      var message = document.getElementById("message").value.trim();
+
+      var url = "https://wa.me/" + phonenumber + "?text=" +
+        "Name: " + name + "%0a" +
+        "Email: " + email + "%0a" +
+        "Message: " + message +
+        "%0a%0a" +
+        "&#128150;";
+
+      window.open(url, '_blank').focus();
+    }
+  }
+  // Add event listener to the "SEND" button
+  var sendButton = document.getElementById("sendButton");
+  sendButton.addEventListener("click", sendwhatsapp);
+});
+
+
+//SMOOYH_______________________________________________-____-------------------------------------------------------------------------------------------------------
+  // JavaScript for smooth scrolling
+  const links = document.querySelectorAll('.navv-item a');
+  links.forEach(link => {
+    link.addEventListener('click', smoothScroll);
+  });
+
+  function smoothScroll(event) {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
 

@@ -16,7 +16,13 @@
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+ <!-- add icon link -->
+ <link rel="icon" href=
+ "/imges/young-man-face-avater-vector-illustration-design_968209-13.avif"
+           type="image/x-icon">
+
     <title>portfolio website</title>
+
 </head>
 <body>
  
@@ -36,19 +42,19 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse navv-item" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5 fw-bold">
         <li class="nav-item ">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
+          <a class="nav-link" href="#Me">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
+          <a class="nav-link" href="#Skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#socia">SociaMedia</a>
         </li>
       </ul>
     </div>
@@ -60,7 +66,7 @@
 
 
 <!-- home page section -->
-<section class="home-section">
+<section class="home-section" id="home">
     
 <div class="container">
     <div class="row">
@@ -87,7 +93,7 @@
 </section>
 
 <!-- aboutme section -->
-<section>
+<section  id="Me">
     <div class="container two ">
         <div class="left-box">
           <h2 class="text-center">About Karthi</h2>
@@ -113,7 +119,7 @@
 </section>      
 
 <!-- skill section -->
-<section style="background-color:#535c68; ">
+<section style="background-color:#535c68; "  id="Skills">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -223,43 +229,42 @@ Integrated animations and interactive elements to enhance user engagement.
 
 <!--  from sectiom -->
 <section>
-    <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <div class="form-section">
-              <h2 class="text-center mb-4">Contact Form</h2>
-              <form id="contactForm">
-                <div class="mb-3">
-                  <label for="name" class="form-label name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                  <label for="gmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="gmail" name="gmail" required>
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                </div>
-                <!-- <button id="submitButton" type="button">Submit</button> -->
-
-                <button type="submit" onclick="sendwhatsapp()" class="btn btn-primary">Submit</button>
-              </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="form-section">
+          <h2 class="text-center mb-4">Contact Form</h2>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="gmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="gmail" name="gmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="button" id="sendButton" class="btn btn-primary">SEND</button>
+          </form>
         </div>
       </div>
+    </div>
+  </div>
+  
 </section>
 <!-- SOCIA MEDIA -->
-<section class="social-media">
+<section class="social-media" id="socia">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h3>Follow Us</h3>
-          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.facebook.com/HSK51552278" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com/Karthi84331" class="social-icon"><i class="bi bi-twitter"></i></a>
           <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/karthi-g17/" class="social-icon"><i class="bi bi-linkedin"></i></a>
           <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
@@ -277,6 +282,7 @@ Integrated animations and interactive elements to enhance user engagement.
 </footer>
 </section>
 <!-- Bootstrap JS (optional) - for dropdowns, toggles, etc. -->
+<script src="/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
