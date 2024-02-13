@@ -322,23 +322,27 @@
         /* Extra small devices (phones) */
         @media (min-width: 321px) and (max-width:375) {
           /* Add your custom CSS rules for extra small devices here */
+          .rgb-text {
+
+            font-size: 1.5rem;
           
+        }
       }
 
       /* Small devices */
       @media (min-width: 376px) and (max-width: 425px) {
-          /* Add your custom CSS rules for small devices here */
-          body {background-color: blue;}
-      }
-
-      /* Small devices (portrait tablets and large phones) */
-      @media (min-width: 426px) and (max-width: 576px) {
           /* Add your custom CSS rules for small devices here */
           .rgb-text {
 
             font-size: 1.5rem;
           
         }
+      }
+
+      /* Small devices (portrait tablets and large phones) */
+      @media (min-width: 426px) and (max-width: 576px) {
+          /* Add your custom CSS rules for small devices here */
+        
       }
 
       /* Medium devices (landscape tablets) */
