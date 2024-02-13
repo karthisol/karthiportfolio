@@ -334,7 +334,11 @@
       /* Small devices (portrait tablets and large phones) */
       @media (min-width: 426px) and (max-width: 576px) {
           /* Add your custom CSS rules for small devices here */
+          .rgb-text {
+
+            font-size: 1.5rem;
           
+        }
       }
 
       /* Medium devices (landscape tablets) */
