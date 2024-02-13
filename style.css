@@ -1,4 +1,5 @@
-body {
+
+ body {
     font-family: 'Roboto', sans-serif;
   }
 
@@ -39,7 +40,11 @@ body {
 }
 
 
+/* nav-link hover  */
 
+ .navv-item ul li a:hover{
+  color:lightsalmon;
+ }
 
 
 
@@ -113,11 +118,7 @@ body {
 }
 }
         /* Custom CSS for styling */
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-        }
+
         
         .two {
           display: flex;
@@ -315,4 +316,42 @@ body {
 
 
       /* form */
+
+      /* all screen media q */
+         /* Custom CSS for different screen sizes */
+        /* Extra small devices (phones) */
+        @media (min-width: 321px) and (max-width:375) {
+          /* Add your custom CSS rules for extra small devices here */
+          
+      }
+
+      /* Small devices */
+      @media (min-width: 376px) and (max-width: 425px) {
+          /* Add your custom CSS rules for small devices here */
+          body {background-color: blue;}
+      }
+
+      /* Small devices (portrait tablets and large phones) */
+      @media (min-width: 426px) and (max-width: 576px) {
+          /* Add your custom CSS rules for small devices here */
+          
+      }
+
+      /* Medium devices (landscape tablets) */
+      @media (min-width: 577px) and (max-width: 768px) {
+          /* Add your custom CSS rules for medium devices here */
+          
+      }
+
+      /* Large devices (laptops/desktops) */
+      @media (min-width: 769px) and (max-width: 992px) {
+          /* Add your custom CSS rules for large devices here */
+          
+      }
+
+      /* Extra large devices (large laptops and desktops) */
+      @media (min-width: 993px) and (max-width: 1200px) {
+          /* Add your custom CSS rules for extra large devices here */
+          
+      }
       
